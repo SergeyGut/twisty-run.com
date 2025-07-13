@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My App</title>
   <style>
-    * {
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
       height: 100%;
-      font-family: Arial, sans-serif;
     }
 
-    .banner {
-      height: 100vh; /* Full screen */
-      background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+    body {
+      background: url('images/Loadingscreen_twisty_race_1024x500.png') no-repeat center center/cover;
       display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
     }
 
-    .banner h1 {
-      font-size: 3em;
-      background: rgba(0, 0, 0, 0.5); /* optional overlay */
-      padding: 20px;
-      border-radius: 10px;
+    .google-play-btn {
+      margin-bottom: 40px; /* spacing from bottom */
+    }
+
+    .google-play-btn img {
+      width: 200px;
+      height: auto;
+      transition: transform 0.2s ease;
+    }
+
+    .google-play-btn img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
 
-  <div class="banner">
-    <h1>Welcome to My App</h1>
-  </div>
+  <a class="google-play-btn" href="https://play.google.com/store/apps/details?id=com.TumbaGames.TwistyRun" target="_blank" rel="noopener">
+    <img src="images/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+  </a>
 
 </body>
 </html>
